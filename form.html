@@ -8,15 +8,26 @@
 <body>
     <h1>회원가입 사이트</h1>
     <p>사용자 정보 입력</p>
-    <form action="save_ok.php">
+    <form action="save_ok.php" method="post">
         <label for = "fname">이름: </label>
-        <input type="text" id="uname" name="uname" required><br><br>
+        <input type="text" id="uname" name="uname" placeholder="홍길동" required><br><br>
         
         <label for = "age">나이: </label>
         <input type="text" id="uage" name="uage" required><br><br>
 
         <label for = "pwd">비밀번호: </label>
         <input type="password" id="pwd" name="pwd" placeholder="4자 이상 입력" required><br><br>
+
+        비밀번호 힌트<br>
+        <select name="hint">
+            <option value="1">내가 가장 많이 사용하는 비밀번호</option>
+            <option value="2">나의 생일</option>
+            <option value="3">가장 친한 친구</option>
+            <option value="4">가장 기억에 남는 일</option>
+            <option value="5">처음으로 지각한 날</option>
+            <option value="6">수능 수험번호</option>
+        </select>
+        <br><br>
 
         <label for="gender1">성별: </label>
         <input type="radio" id="gender1" name="gender" value="M" checked>남<input type="radio" id="radio" name="gender" value="W">여<br><br>
@@ -51,33 +62,20 @@
         <label for="birthday">생일</label><br>
         <input type="date" id="birthday" name="birthday"><br><br>
     
-    
+        <label for="uni">출신대학: </label>
+        <input type="text" id="univer" name="univer" placeholder="xx대학교" required><br><br>
+
+        가입 사유 : <br>
+        <textarea name="content" cols=40 row=5 placeholder="최대 200자"></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit">
 
 
 
 
-
-
-        
     
     
     </form>
 </body>
 </html>
-
-/*입력항목
-1. 이름-
-2. 나이-
-3. 이메일-
-4. 사는 곳-
-5. 출신 대학
-6. 새로 만들 비밀번호-
-7. 비밀번호를 모를 경우 힌트
-8. 취미
-9. 가입 사유
-10. 성별-
-11. 생일-
-● form.html 내에 사용할 입력 항목 type
-● 필수 : text, radio, checkbox, select, date, textarea
-● 선택 : fieldset, legend, optgroup, color, datalist
-*/

@@ -5,49 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-        background-color: #000000;
-        color:#ffffff;
-        }
-        #top{
+    body {
+        font: 100% Lucida Sans, Verdana;
+        margin: 20px;
+        line-height: 26px;
+    }
+    
+    .container {
+        width: 900px;
+    }
+    
+    .wrapper {
+        position: relative;
+        overflow: auto;
+    }
+    
+    #top, #sidebar, #bottom, .menuitem {
+        border-radius: 4px;
+        margin: 4px;
+    }
+    
+    #top {
+        background-color: #04AA6D;
+        color: #ffffff;
+        padding: 15px;
+    }
+    
+    #menubar {
+        width: 200px;
+        float: left
+    }
+    
+    #main {
         padding: 10px;
-        background-image: linear-gradient(to top, gray, silver);
-        }
-        #menubar{
+        margin: 0 210px;
+    }
+    
+    #sidebar {
+        background-color: #32a4e7;
+        color: #ffffff;
         padding: 10px;
-        background-image: linear-gradient(to bottom, gray, silver);
-        }
-        #main{
+        width: 180px;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    
+    #bottom {
+        border: 1px solid #d4d4d4;
+        background-color: #f1f1f1;
+        text-align: center;
         padding: 10px;
-        background-image: linear-gradient(to top, gray, silver);
+        font-size: 70%;
+        line-height: 14px;
+    }
+    
+    #top h1, #top p, #menulist {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menuitem {
+        background-color: #f1f1f1;
+        border: 1px solid #d4d4d4;
+        list-style-type: none;
+        padding: 2px;
+        cursor: pointer;
+    }
+    
+    .menuitem:hover {
+        background-color: #ffffff;
+    }
+    
+    .menuitem:first-child {
+       background-color:#04AA6D;
+       color: white;
+       font-weight:bold;
+    }
+    
+    a {
+        color: #000000;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    
+    @media (max-width: 800px) {
+        #sidebar {
+            width: auto;
+            position: relative;
+        } 
+        #main {
+            margin-right: 0;
+        }    
+           
+    }
+    
+    @media (max-width: 600px) {
+        #menubar {
+            width: auto;
+            float: none;
         }
-        #sidebar{
-        padding: 10px;
-        background-image: linear-gradient(to bottom, gray, silver);
-        }
-
-        #bottom{
-        padding: 10px;
-        background-image: linear-gradient(to top, gray, silver);
-        }
+        #main {
+            margin: 0;
+        }    
+    }
     </style>
 </head>
 <body>
 
     <div class="container wrapper">
       <div id="top">
-        <h1>Welcome to ê¹€ì„±ì§€'s Homepage(22000097)</h1>
+        <h1>Welcome to ±è¼ºÁö's Homepage(22000097)</h1>
         <p>Use the menu to select different Stylesheets</p>
         <a href = "index.html">go home</a>
       </div>
       <div class="wrapper">
        <div id="menubar">
          <ul id="menulist">
-          <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
-          <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
-           <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
-           <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-          <li class="menuitem" onclick="noStyles()">No Stylesheet
+            <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
+            <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+             <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+             <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+            <li class="menuitem" onclick="noStyles()">No Stylesheet
          </ul>
         </div>
         <div id="main">

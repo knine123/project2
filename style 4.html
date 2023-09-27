@@ -5,125 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    body {
-        font-family: Arial;
-        background-color: #d14836;
-        line-height: 20px;
+    body{
+    background-color : #c4bfbe;
+    padding : 15px
+    }
+    #sidebar , #bottom  , #main{
+    padding : 10px;
+    background-color : #ffffff;
+    border-radius : 10px;
     }
     
-    .container {
-        width: 900px;
+    #main{
+    	background-image: linear-gradient(to bottom, red, yellow);
     }
     
-    .wrapper {
-        position: relative;
-        overflow: auto;
+    #main h1, h2{
+    	color : blue;
     }
     
-    #top {
-        color: #ffffff;
-        padding: 15px;
-        font-size: 30px;
-        line-height: 26px;    
+    #sidebar{
+        background-image: linear-gradient(to top, #7e7eff,#ffffff);
+    }
+    #sidebar h3{
+    	color : red;
+        font-size : 20px;
     }
     
-    #top h1 {
-        margin:0;
-        line-height: 50px;
-    }
-    
-    #menubar {
-        width: 190px;
-        float: right;
-    }
-    
-    #main {
-        padding: 10px;
-        background-color: #ffffff;
-        font: 80% Verdana;
-    }
-    
-    #main h1, #main h2 {
-        color: #d14836;
-    }
-    
-    #sidebar {
-        background-color: #F6DAD7;
-        color: #d14836;
-        padding: 10px;
-    }
-    
-    #bottom {
-        text-align: center;
-        padding: 10px;
-        font-size: 70%;
-        color: #ffffff;
-    }
-    
-    #menulist {
-        padding:0;
-        font: 16px verdana;
+    #bottom{
+    	background-image: linear-gradient(to top, #0001ff,#7e7eff);
+    	
     }
     
     .menuitem {
-        width: 155px;
-        background-color: #d14836;
-        border: 1px solid #d14836;
-        border-radius: 40px;
-        color: #ffffff;
-        list-style-type: none;
-        margin: 10px;
-        padding: 5px;
-        text-align: center;
-        cursor: pointer;
-    }
-    
-    .menuitem:nth-child(2) {
-       background-color:white;
-       color: #d14836;
-       font-weight:bold;
-    }
-    
-    .menuitem:hover {
-        background-color: #ffffff;
-        color: #d14836;
-    }
-    
-    a {
-        color: #d14836;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
+    width: 160px;
+	float : none;
+    background-color: #555555;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+    border-radius : 20px;
+}
+
+.menuitem:nth-child(1) {
+   background-image: linear-gradient(to right, red, yellow);
+
+}
+
+.menuitem:nth-child(2) {
+    background-image: linear-gradient(to bottom, blue, white);
+
+}
+
+.menuitem:nth-child(3) {
+   background-image: linear-gradient(to left, red, yellow);
+
+}
+
+    </style>
 </head>
 <body>
 
     <div class="container wrapper">
       <div id="top">
         <h1>Welcome to 김성지's Homepage(22000097)</h1>
-        <p>Use the menu to select different Stylesheets</p>
-        <a href = "index.html">go home</a>
+        <p>Use the menu to select different Stylesheets<p>
+          <a href = "index.html">go home</a>
       </div>
       <div class="wrapper">
        <div id="menubar">
          <ul id="menulist">
-           <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
-           <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
-            <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
-            <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-           <li class="menuitem" onclick="noStyles()">No Stylesheet
+          <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
+          <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+           <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+           <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+          <li class="menuitem" onclick="noStyles()">No Stylesheet
          </ul>
         </div>
         <div id="main">
+        <br>
           <h1>Same Page Different Stylesheets</h1>
           <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-          <a href="style 1.html" onclick="reStyle(0);return false">Stylesheet1</a>,
-          <a href="style 2.html" onclick="reStyle(1);return false">Stylesheet2</a>,
-          <a href="style 3.html" onclick="reStyle(1);return false">Stylesheet3</a>,
-          <a href="style 4.html" onclick="reStyle(1);return false">Stylesheet4</a>.
+            <a href="style 1.html" onclick="reStyle(0);return false">Stylesheet1</a>,
+            <a href="style 2.html" onclick="reStyle(1);return false">Stylesheet2</a>,
+            <a href="style 3.html" onclick="reStyle(1);return false">Stylesheet3</a>,
+            <a href="style 4.html" onclick="reStyle(1);return false">Stylesheet4</a>.
           </p>
            <h2>No Styles</h2>
           <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="nostyle.html" onclick="noStyles();return false">No Stylesheet</a>.</p>

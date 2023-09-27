@@ -6,76 +6,77 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>È¸¿ø°¡ÀÔ »çÀÌÆ®</h1>
-    <p>»ç¿ëÀÚ Á¤º¸ ÀÔ·Â</p>
+    <h1>íšŒì›ê°€ìž… ì‚¬ì´íŠ¸</h1>
+    <p>ì‚¬ìš©ìž ì •ë³´ ìž…ë ¥</p>
     <form action="save_ok.php" method="post">
-        <label for = "fname">ÀÌ¸§: </label>
-        <input type="text" id="uname" name="uname" placeholder="È«±æµ¿" required><br><br>
+        <label for = "fname">ì´ë¦„: </label>
+        <input type="text" id="uname" name="uname" placeholder="í™ê¸¸ë™" required><br><br>
         
-        <label for = "age">³ªÀÌ: </label>
+        <label for = "age">ë‚˜ì´: </label>
         <input type="text" id="uage" name="uage" required><br><br>
 
-        <label for = "pwd">ºñ¹Ð¹øÈ£: </label>
-        <input type="password" id="pwd" name="pwd" placeholder="4ÀÚ ÀÌ»ó ÀÔ·Â" required><br><br>
+        <label for = "pwd">ë¹„ë°€ë²ˆí˜¸: </label>
+        <input type="password" id="pwd" name="pwd" placeholder="4ìž ì´ìƒ ìž…ë ¥" required><br><br>
 
-        ºñ¹Ð¹øÈ£ ÈùÆ®<br>
+        ë¹„ë°€ë²ˆí˜¸ ížŒíŠ¸<br>
         <select name="hint">
-            <option value="1">³»°¡ °¡Àå ¸¹ÀÌ »ç¿ëÇÏ´Â ºñ¹Ð¹øÈ£</option>
-            <option value="2">³ªÀÇ »ýÀÏ</option>
-            <option value="3">°¡Àå Ä£ÇÑ Ä£±¸</option>
-            <option value="4">°¡Àå ±â¾ï¿¡ ³²´Â ÀÏ</option>
-            <option value="5">Ã³À½À¸·Î Áö°¢ÇÑ ³¯</option>
-            <option value="6">¼ö´É ¼öÇè¹øÈ£</option>
+            <option value="1">ë‚´ê°€ ê°€ìž¥ ë§Žì´ ì‚¬ìš©í•˜ëŠ” ë¹„ë°€ë²ˆí˜¸</option>
+            <option value="2">ë‚˜ì˜ ìƒì¼</option>
+            <option value="3">ê°€ìž¥ ì¹œí•œ ì¹œêµ¬</option>
+            <option value="4">ê°€ìž¥ ê¸°ì–µì— ë‚¨ëŠ” ì¼</option>
+            <option value="5">ì²˜ìŒìœ¼ë¡œ ì§€ê°í•œ ë‚ </option>
+            <option value="6">ìˆ˜ëŠ¥ ìˆ˜í—˜ë²ˆí˜¸</option>
         </select>
         <br><br>
 
-        <label for="gender1">¼ºº°: </label>
-        <input type="radio" id="gender1" name="gender" value="M" checked>³²<input type="radio" id="radio" name="gender" value="W">¿©<br><br>
+        <label for="gender1">ì„±ë³„: </label>
+        <input type="radio" id="gender1" name="gender" value="M" checked>ë‚¨<input type="radio" id="radio" name="gender" value="W">ì—¬<br><br>
         
-        <label for="email">ÀÌ¸ÞÀÏ: </label>
+        <label for="email">ì´ë©”ì¼: </label>
         <input type="email" id="uemail" name="uemail" required><br><br>
 
-        Áö¿ª¼±ÅÃ : 
+        ì§€ì—­ì„ íƒ : 
         <select name="city">
-            <optgroup label="¼­¿ï">
-                <option value="1">°­³²±¸</option>
-                <option value="2">¼­ÃÊ±¸</option>
-                <option value="3">¼ÛÆÄ±¸</option>
+            <optgroup label="ì„œìš¸">
+                <option value="1">ê°•ë‚¨êµ¬</option>
+                <option value="2">ì„œì´ˆêµ¬</option>
+                <option value="3">ì†¡íŒŒêµ¬</option>
             </optgroup>
-            <optgroup label="°æ±âµµ">
-                <option value="1">¼º³²½Ã</option>
-                <option value="2">¼ö¿ø½Ã</option>
-                <option value="3">¿ëÀÎ½Ã</option>
+            <optgroup label="ê²½ê¸°ë„">
+                <option value="1">ì„±ë‚¨ì‹œ</option>
+                <option value="2">ìˆ˜ì›ì‹œ</option>
+                <option value="3">ìš©ì¸ì‹œ</option>
             </optgroup>
-            <optgroup label="°æ»óµµ">
-                <option value="1">Ã¢¿ø½Ã</option>
-                <option value="2">±èÇØ½Ã</option>
-                <option value="3">¾ç»ê½Ã</option>
+            <optgroup label="ê²½ìƒë„">
+                <option value="1">ì°½ì›ì‹œ</option>
+                <option value="2">ê¹€í•´ì‹œ</option>
+                <option value="3">ì–‘ì‚°ì‹œ</option>
             </optgroup>
         </select>
         <br><br>
-        <label for="hobby1">Ãë¹Ì: </label>
-        <input type="checkbox" id="hobby1" name="hobby1" value="1">¿µÈ­°¨»ó
-        <input type="checkbox" id="hobby1" name="hobby2" value="2">½ºÆ÷Ã÷
-        <input type="checkbox" id="hobby1" name="hobby3" value="3">µ¶¼­<br><br>
+        <label for="hobby1">ì·¨ë¯¸: </label>
+        <input type="checkbox" id="hobby1" name="hobby1" value="1">ì˜í™”ê°ìƒ
+        <input type="checkbox" id="hobby1" name="hobby2" value="2">ìŠ¤í¬ì¸ 
+        <input type="checkbox" id="hobby1" name="hobby3" value="3">ë…ì„œ<br><br>
     
-        <label for="birthday">»ýÀÏ</label><br>
+        <label for="birthday">ìƒì¼</label><br>
         <input type="date" id="birthday" name="birthday"><br><br>
     
-        <label for="uni">Ãâ½Å´ëÇÐ: </label>
-        <input type="text" id="univer" name="univer" placeholder="xx´ëÇÐ±³" required><br><br>
+        <label for="uni">ì¶œì‹ ëŒ€í•™: </label>
+        <input type="text" id="univer" name="univer" placeholder="xxëŒ€í•™êµ" required><br><br>
 
-        °¡ÀÔ »çÀ¯ : <br>
-        <textarea name="content" cols=40 row=5 placeholder="ÃÖ´ë 200ÀÚ"></textarea>
+        ê°€ìž… ì‚¬ìœ  : <br>
+        <textarea name="content" cols=40 row=5 placeholder="ìµœëŒ€ 200ìž"></textarea>
 
         <br><br>
         <input type="submit" value="Submit">
 
-
+        <br><br>
 
 
     
     
     </form>
+    <a href = "index.html">go home</a>
 </body>
 </html>
